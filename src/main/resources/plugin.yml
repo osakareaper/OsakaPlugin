@@ -1,0 +1,7 @@
+name: OsakaPlugin
+version: '${version}'
+main: dev.osakareaper.osakaplugin.OsakaPlugin
+description: A big variety of functions
+author: osakareaper
+website: https://github.com/osakareaper
+api-version: '1.20'
