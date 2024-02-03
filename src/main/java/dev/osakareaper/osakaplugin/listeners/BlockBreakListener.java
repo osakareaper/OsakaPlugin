@@ -1,6 +1,5 @@
 package dev.osakareaper.osakaplugin.listeners;
 
-import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -16,7 +15,7 @@ public class BlockBreakListener implements Listener {
 
         if (event.getBlock().getType() == Material.GRASS_BLOCK) {
             grassBlocks++;
-            player.sendMessage(Component.text("Você quebrou " + grassBlocks + " blocos de grama."));
+            player.giveExpLevels(1);
         }
     }
 }
